@@ -1,8 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import colorCode from './components/images/codebg.jpg';
 import noColorCode from './components/images/codebg2.jpg';
-import brick from './components/images/brick.jpg'
-
 
 export const scrollingText = keyframes`
 	0% {
@@ -79,6 +77,7 @@ export const Skills = styled.div`
   font-family: 'Lato', sans-serif;
   justify-content: space-around;
   margin-bottom: 15px;
+  line-height: 1.5;
 `
 export const SkillsP = styled.p`
 	font-size: 2rem;
@@ -89,8 +88,6 @@ export const SkillsP = styled.p`
 `
 
 export const ProjectHr = styled.hr`
-	height: 1px;
-	background-color: grey;
 	margin: 0;
 `
 
@@ -126,10 +123,12 @@ export const Green = styled.span`
 `
 
 export const Separator = styled(ProjectHr)`
-	width:2.5px;
-	background-color:#666;
+	display: block;
+  border: 0;
+  border-top: 1px solid white;
 	height: 530px;
-	margin: 0 4% 0 4%;
+	margin: 0 2%;
+	border-color: white;
 	@media (max-width: 700px){
 		display: none;
 	}
@@ -157,12 +156,6 @@ export const Contact = styled.div`
 			font-size: 1.6rem;
 		}
 	}
-`
-
-export const ContactSeparator = styled(Separator)`
-	height: 270px;
-	margin: 0 4% 0 17.5%;
-	width: 4.5px
 `
 
 export const SeparateContact = styled.div`

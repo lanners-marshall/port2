@@ -4,7 +4,7 @@ import me from './components/images/me.jpeg'
 import './images.css'
 import './vidoes.css'
 import ReactContactForm from 'react-mail-form';
-import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, Skills, SkillsP, ProjectHr, Green, SeparateDiv, ProjectH2, ContentP, Separator, Contact, ContactDiv, ContactSeparator, SeparateContact, LinksDiv } from './app_css.js';
+import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, Skills, SkillsP, ProjectHr, Green, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv } from './app_css.js';
 import github from './components/images/github.png';
 import linkin from './components/images/link.png';
 
@@ -84,7 +84,6 @@ class App extends Component {
               </ContentP><br />
             </div>
           </SeparateDiv>
-          <ProjectHr/>
           <StyledH2>Contact Me</StyledH2>
           <SeparateContact>
               <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
@@ -100,8 +99,6 @@ class App extends Component {
             <a href="https://www.linkedin.com/in/mlanners/"><img src={linkin} alt='linkin' className='linkin' /></a>
           </LinksDiv>
         </Container>
-
-
         <Footing>
         </Footing>
       </Background>
