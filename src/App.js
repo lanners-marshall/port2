@@ -47,20 +47,20 @@ class App extends Component {
           <StyledH2>Technical Training</StyledH2>
           <SkillsP>I joined<a href="https://lambdaschool.com/"> Lambda School</a>, a full time 6 month programming bootcamp, for their full stack web development program. While the main bulk of my studies involved around <Green>React</Green> and <Green>Node</Green> other technologies covered in the program include:</SkillsP>
           <Skills>
-            <ol>
+            <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>LESS</li>
               <li>SQL</li>
               <li>Javascript</li>
-            </ol>
-            <ol>
+            </ul>
+            <ul>
               <li>Git</li>
               <li>Responsive Design</li>
               <li>Python</li>
               <li>Django</li>
               <li>C</li>
-            </ol>
+            </ul>
           </Skills>
           <StyledH2>My Projects</StyledH2>
           <ProjectHr/>
