@@ -51,7 +51,7 @@ export const TextBanner = styled.h2`
 	font-family: 'Roboto', sans-serif;
 `
 export const Footing = styled.div`
-	height: 200px;
+	height: 100px;
 `
 
 export const StyledH2 = styled.h2`
@@ -154,6 +154,7 @@ export const Contact = styled.div`
 	@media (max-width: 700px){
 			width: 90%;
 			margin: 30px auto;
+			font-size: 1.6rem;
 		}
 	}
 `
