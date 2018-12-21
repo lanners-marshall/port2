@@ -12,8 +12,8 @@ export const scrollingText = keyframes`
 `
 
 export const Swing = keyframes`
-	50% { transform: rotate(1deg);}
-	80% { transform: rotate(-1deg);}
+	50% { transform: rotate(2deg);}
+	80% { transform: rotate(-2deg);}
 	100% { transform: rotate(0deg)}
 `
 
