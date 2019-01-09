@@ -8,7 +8,7 @@ import resume from './components/images/resume.pdf'
 import './images.css'
 import './vidoes.css'
 import ReactContactForm from 'react-mail-form';
-import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, Skills, SkillsP, ProjectHr, Green, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv } from './app_css.js';
+import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, Skills, SkillsP, ProjectHr, Green, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, StyledH2Ed } from './app_css.js';
 import github from './components/images/github.png';
 import linkin from './components/images/link.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -96,7 +96,7 @@ class App extends Component {
                   <li>C</li>
                 </ul>
               </Skills>
-              <StyledH2>Education</StyledH2>
+              <StyledH2Ed>Education</StyledH2Ed>
               <EducationDiv>
                 <div>
                   <p>I have a bachelors of Science in Business Administration and with a concentration in managing technology and people. 

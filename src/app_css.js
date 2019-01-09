@@ -82,6 +82,10 @@ export const StyledH2 = styled.h2`
 	}
 `
 
+export const StyledH2Ed = styled(StyledH2)`
+	margin-top: 50px;
+`
+
 export const StoryDiv = styled.div`
 	display:flex;
 	width: 93%;
@@ -119,7 +123,7 @@ export const Skills = styled.div`
   font-family: 'Lato', sans-serif;
   justify-content: space-around;
   line-height: 1.5;
-  > ul {
+   > ul {
 		@media (max-width: 500px){
 				margin-left: 8%;
 		}
@@ -129,8 +133,9 @@ export const SkillsP = styled.p`
 	font-size: 2rem;
 	line-height: 1.5;
 	width: 93%;
-	margin: 15px auto;
+	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
+	margin-bottom: 70px;
 `
 
 
