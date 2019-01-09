@@ -77,6 +77,9 @@ export const StyledH2 = styled.h2`
 	margin-top: 90px;
 	text-align: center;
 	font-size: 4rem;
+	@media (max-width: 600px){
+		margin: 60px;
+	}
 `
 
 export const StoryDiv = styled.div`
