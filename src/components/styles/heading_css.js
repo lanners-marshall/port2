@@ -9,9 +9,13 @@ export const Container = styled.div`
 	max-width: 600px;
 	text-align: center;
 	> h1 {
-		font-size: 5rem;
+		font-size: 8rem;
+		white-space: nowrap;
+		@media (max-width: 670px){
+			font-size: 4.8rem;
+		}
 	}
 	> p {
-		font-size: 3rem;
+		font-size: 5rem;
 	}
 `

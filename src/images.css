@@ -12,8 +12,23 @@
 	margin-left: 1.5%;
 	width: 40%;
 	height: 40%;
-	border: solid #212931 1px;
-	padding: 1%;
+	border-radius: 8px;
+}
+
+.dance {
+	width: 50%;
+	height: 50%;
+	margin-right: 2%;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+.map {
+	width: 48%;
+	height: 48%;
+	margin-left: 2%;
+	padding-bottom: 30px;
+	border-radius: 8px;
 }
 
 .form {
@@ -38,8 +53,25 @@
   font-size: 2rem;
 }
 
+.college {
+	width: 50%;
+	height: 50%;
+	margin-left: 3%;
+	border-radius: 8px;
+	padding-bottom: 30px;
+}
+
 @media only screen and (max-width: 1180px){
 	.me {
+		display: none;
+	}
+	.dance {
+		display: none;
+	}
+	.map {
+		display: none;
+	}
+	.college {
 		display: none;
 	}
 }
@@ -58,5 +90,23 @@
 		padding: 2%;
 		margin: 0 auto;
 		margin-bottom: 15px;
+	}
+	.dance {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.map {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+	.college {
+		display: block;
+		margin: 0;
+		margin-bottom: 15px;
+		width: 100%;
 	}
 }

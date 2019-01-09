@@ -1,0 +1,47 @@
+.tab-list {
+	margin-top: 30px;
+	display: flex;
+	font-size: 2rem;
+	list-style-type: none;
+	margin-left: 3.5%;
+	justify-content: center;
+}
+
+.sub-tab {
+	border: solid black 1px;
+	padding: 2%;
+	border-radius: 4px;
+	margin-right: 2%;
+	width: 150px;
+	text-align: center;
+}
+
+.sub-tab:hover {
+	cursor: pointer;
+}
+
+.selected {
+	border: solid black 1px;
+	padding: 2%;
+	background-color: grey;
+	border-radius: 4px;
+	margin-right: 2%;
+	width: 150px;
+	text-align: center;
+}
+
+@media (max-width: 500px){
+	.tab-list {
+		flex-direction: column;
+		width: 100%;
+	}
+	.sub-tab {
+		width: 88%;
+		font-size: 3rem;
+	}
+	.selected {
+		width: 88%;
+		font-size: 3rem;
+	}
+}
+

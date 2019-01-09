@@ -11,6 +11,23 @@ export const scrollingText = keyframes`
 	}
 `
 
+export const ResumeDiv = styled.div`
+	display:flex;
+	justify-content: center;
+`
+
+export const Resume = styled.p`
+	line-height: 1.5;
+  color: white;
+  background-color: #212931;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1%;
+  border-radius: 4px;
+  width: 150px;
+  text-align: center;
+`
+
 export const Swing = keyframes`
 	50% { transform: rotate(2deg);}
 	80% { transform: rotate(-2deg);}
@@ -23,7 +40,7 @@ export const Background = styled.div`
 export const Container = styled.div`
 	margin: 15px auto;
 	width: 90%;
-	max-width: 1080px;
+	max-width: 1280px;
 	background-color: white;
 `
 
@@ -71,6 +88,25 @@ export const StoryDiv = styled.div`
 	}
 `
 
+export const DanceDiv = styled(StoryDiv)`
+	@media (max-width: 500px){
+		flex-direction: column;
+	}
+`
+
+export const EducationDiv = styled(StoryDiv)`
+`
+
+export const DndDiv = styled(StoryDiv)`
+	margin-bottom: 15px;
+	@media only screen and (max-width: 1180px){
+		padding-bottom: 15px;
+	}
+	@media (max-width: 500px){
+		padding-bottom: 30px;
+	}
+`
+
 export const Skills = styled.div`
   display: flex;
   font-size: 2rem;
@@ -78,6 +114,11 @@ export const Skills = styled.div`
   justify-content: space-around;
   margin-bottom: 15px;
   line-height: 1.5;
+  > ul {
+		@media (max-width: 500px){
+				margin-left: 8%;
+		}
+  }
 `
 export const SkillsP = styled.p`
 	font-size: 2rem;
@@ -102,7 +143,6 @@ export const SeparateDiv = styled.div`
 		width: 100%;
 	}
 `
-
 export const ProjectH2 = styled.div`
 	font-size: 3rem;
 	font-family: 'Roboto', sans-serif;
