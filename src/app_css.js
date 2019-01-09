@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import colorCode from './components/images/codebg.jpg';
 import noColorCode from './components/images/codebg2.jpg';
 
+
 export const scrollingText = keyframes`
 	0% {
 		transform: translateX(10%)
@@ -42,6 +43,7 @@ export const Container = styled.div`
 	width: 90%;
 	max-width: 1280px;
 	background-color: white;
+	padding-bottom:60px;
 `
 
 export const CodeDiv = styled.div`
@@ -71,7 +73,8 @@ export const Footing = styled.div`
 
 export const StyledH2 = styled.h2`
 	font-family: 'Roboto', sans-serif;
-	margin: 30px 0;
+	margin: 60px 0;
+	margin-top: 90px;
 	text-align: center;
 	font-size: 4rem;
 `
@@ -112,7 +115,6 @@ export const Skills = styled.div`
   font-size: 2rem;
   font-family: 'Lato', sans-serif;
   justify-content: space-around;
-  margin-bottom: 15px;
   line-height: 1.5;
   > ul {
 		@media (max-width: 500px){
@@ -127,6 +129,7 @@ export const SkillsP = styled.p`
 	margin: 15px auto;
 	font-family: 'Lato', sans-serif;
 `
+
 
 export const ProjectHr = styled.hr`
 	margin: 0;
@@ -147,7 +150,7 @@ export const ProjectH2 = styled.div`
 	font-size: 3rem;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	margin: 15px 0;
+	margin: 40px 0;
 `
 
 export const ContentP = styled.p`
@@ -216,6 +219,3 @@ export const LinksDiv = styled.div`
 		margin-right: 2%;
 	}
 `
-
-
-
