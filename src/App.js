@@ -20,13 +20,13 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      active: [true, false, false]
+      active: [true, false, false, false]
     };
   }
 
   makeActive = (index) => {
     this.setState({
-      active: [false, false, false]
+      active: [false, false, false, false]
     }, () => {
       let active = this.state.active
       for (let i in active){
