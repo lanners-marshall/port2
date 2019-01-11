@@ -191,7 +191,7 @@ class App extends Component {
                 </div>
                 <img src={map} alt='Marshall Lanners dancing' className='map' />
               </DndDiv>
-            </TabPanel>>
+            </TabPanel>
           </Tabs>
         </Container>
         <Footing>
