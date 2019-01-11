@@ -12,10 +12,10 @@ export const Container = styled.div`
 		font-size: 8rem;
 		white-space: nowrap;
 		@media (max-width: 670px){
-			font-size: 4.8rem;
+			font-size: 4rem;
 		}
 	}
 	> p {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 `
