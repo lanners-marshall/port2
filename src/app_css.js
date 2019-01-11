@@ -5,19 +5,19 @@ import noColorCode from './components/images/codebg2.jpg';
 
 export const scrollingText = keyframes`
 	0% {
-		transform: translateX(10%)
+		transform: translateX(110%)
 	}
 	100% {
-		transform: translateX(-100%)
+		transform: translateX(-200%)
 	}
 `
 
 export const scrollingTextMobile = keyframes`
 	0% {
-		transform: translateX(10%)
+		transform: translateX(110%)
 	}
 	100% {
-		transform: translateX(-650%)
+		transform: translateX(-620%)
 	}
 `
 
@@ -72,12 +72,10 @@ export const TextBanner = styled.h2`
 	color: white;
 	opacity: 0.5;
 	white-space: nowrap;
-	animation-timing-function: linear;
-	animation: ${scrollingText} 80s infinite;
+	animation: ${scrollingText} 40s linear infinite;
 	font-family: 'Roboto', sans-serif;
 	@media (max-width: 500px){
-		animation-timing-function: linear;
-		animation: ${scrollingTextMobile} 60s infinite;
+		animation: ${scrollingTextMobile} 40s linear infinite;
 	}
 `
 export const Footing = styled.div`
