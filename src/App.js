@@ -44,10 +44,8 @@ class App extends Component {
   render() {
     return (
       <Background>
-
         <Heading>
         </Heading>
-
         <Container>
           <CodeDiv>
           <TextBanner>
@@ -95,6 +93,7 @@ class App extends Component {
                   <li>Django</li>
                   <li>C</li>
                 </ul>
+                <p>HTML, CSS, LESS, SQL, Javascript, Git, Responsive Design, Python, Django, C</p>
               </Skills>
               <StyledH2Ed>Education</StyledH2Ed>
               <EducationDiv>

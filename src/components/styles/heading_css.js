@@ -16,6 +16,9 @@ export const Container = styled.div`
 		}
 	}
 	> p {
-		font-size: 3rem;
+		font-size: 5rem;
+		@media (max-width: 670px){
+			font-size: 3rem;
+		}
 	}
 `

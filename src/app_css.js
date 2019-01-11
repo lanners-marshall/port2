@@ -123,9 +123,16 @@ export const Skills = styled.div`
   font-family: 'Lato', sans-serif;
   justify-content: space-around;
   line-height: 1.5;
+  > p {
+  	display: none;
+  	@media (max-width: 700px){
+  		display: block;
+  		text-align: center;
+  	}
+  }
    > ul {
-		@media (max-width: 500px){
-				margin-left: 8%;
+		@media (max-width: 700px){
+				display: none;
 		}
   }
 `
