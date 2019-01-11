@@ -72,11 +72,12 @@ export const TextBanner = styled.h2`
 	color: white;
 	opacity: 0.5;
 	white-space: nowrap;
-	animation: ${scrollingText} 80s infinite;
 	animation-timing-function: linear;
+	animation: ${scrollingText} 80s infinite;
 	font-family: 'Roboto', sans-serif;
 	@media (max-width: 500px){
-		animation: ${scrollingTextMobile} 40s infinite;
+		animation-timing-function: linear;
+		animation: ${scrollingTextMobile} 60s infinite;
 	}
 `
 export const Footing = styled.div`
