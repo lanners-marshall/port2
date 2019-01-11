@@ -12,6 +12,15 @@ export const scrollingText = keyframes`
 	}
 `
 
+export const scrollingTextMobile = keyframes`
+	0% {
+		transform: translateX(10%)
+	}
+	100% {
+		transform: translateX(-650%)
+	}
+`
+
 export const ResumeDiv = styled.div`
 	display:flex;
 	justify-content: center;
@@ -66,6 +75,9 @@ export const TextBanner = styled.h2`
 	animation: ${scrollingText} 80s infinite;
 	animation-timing-function: linear;
 	font-family: 'Roboto', sans-serif;
+	@media (max-width: 500px){
+		animation: ${scrollingTextMobile} 40s infinite;
+	}
 `
 export const Footing = styled.div`
 	height: 100px;
