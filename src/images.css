@@ -95,13 +95,14 @@
 		width: 100%;
 		display: block;
 		margin: 0 auto;
+		margin-bottom: 30px;
 	}
 
 	.map {
 		width: 100%;
 		display: block;
 		margin: 0 auto;
-		margin-top: 15px;
+		margin-top: 30px;
 	}
 	.college {
 		display: block;
