@@ -17,7 +17,7 @@ export const scrollingTextMobile = keyframes`
 		transform: translateX(110%)
 	}
 	100% {
-		transform: translateX(-620%)
+		transform: translateX(-770%)
 	}
 `
 
@@ -72,7 +72,7 @@ export const TextBanner = styled.h2`
 	color: white;
 	opacity: 0.5;
 	white-space: nowrap;
-	animation: ${scrollingText} 40s linear infinite;
+	animation: ${scrollingText} 60s linear infinite;
 	font-family: 'Roboto', sans-serif;
 	@media (max-width: 500px){
 		animation: ${scrollingTextMobile} 40s linear infinite;

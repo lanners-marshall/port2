@@ -14,7 +14,6 @@ import linkin from './components/images/link.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './components/styles/custom.css';
 
-
 class App extends Component {
 
   constructor(){

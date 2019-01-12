@@ -9,6 +9,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.6.3",
     "react-mail-form": "^1.0.2",
+    "react-modal": "^3.8.1",
     "react-scripts": "2.1.1",
     "react-tabs": "^3.0.0",
     "styled-components": "^4.1.3"
