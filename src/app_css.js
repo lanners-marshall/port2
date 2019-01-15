@@ -3,6 +3,8 @@ import colorCode from './components/images/codebg.jpg';
 import noColorCode from './components/images/codebg2.jpg';
 
 
+// project
+
 export const scrollingText = keyframes`
 	0% {
 		transform: translateX(110%)
@@ -92,6 +94,12 @@ export const StyledH2 = styled.h2`
 	font-size: 4rem;
 	@media (max-width: 600px){
 		margin-top: 0px;
+	}
+`
+export const StyledSpace = styled(StyledH2)`
+	@media (max-width: 600px){
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 `
 
@@ -188,6 +196,7 @@ export const ProjectH2 = styled.div`
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	margin: 40px 0;
+
 `
 
 export const ContentP = styled.p`
