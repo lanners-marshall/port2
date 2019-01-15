@@ -5,10 +5,15 @@ import dance from './components/images/dancing.jpg'
 import map from './components/images/map.jpeg'
 import college from './components/images/calpoly.jpg'
 import resume from './components/images/resume.pdf'
+import react from './components/images/react.png';
+import node from './components/images/node.png';
+import html from './components/images/html.png';
+import css from './components/images/css.png';
+import python from './components/images/python.png';
 import './images.css'
 import './vidoes.css'
 import ReactContactForm from 'react-mail-form';
-import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, Skills, SkillsP, ProjectHr, Green, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, StyledH2Ed } from './app_css.js';
+import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, Skills, SkillsP, ProjectHr, Green, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, StyledH2Ed, FlexDiv, CodePicDiv, ColorDiv, Intro } from './app_css.js';
 import github from './components/images/github.png';
 import linkin from './components/images/link.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -25,7 +30,7 @@ class App extends Component {
 
   makeActive = (index) => {
     this.setState({
-      active: [false, false, false, false]
+      active: [false, false, false]
     }, () => {
       let active = this.state.active
       for (let i in active){
@@ -55,55 +60,57 @@ class App extends Component {
             <TabList className="tab-list">
               <Tab onClick={() => {this.makeActive(0)}} className={this.state.active[0] ? 'selected': "sub-tab"}>Home</Tab>
               <Tab onClick={() => {this.makeActive(1)}} className={this.state.active[1] ? 'selected': "sub-tab"}>Projects</Tab>
-              <Tab onClick={() => {this.makeActive(2)}} className={this.state.active[2] ? 'selected': "sub-tab"}>Contact</Tab>
               <Tab onClick={() => {this.makeActive(3)}} className={this.state.active[3] ? 'selected': "sub-tab"}>About</Tab>
             </TabList>
             <TabPanel>
-              <StyledH2>My Story</StyledH2>
+              <Intro>Introduction</Intro>
               <StoryDiv>
                 <div>
-                  <p> I have been playing around with writing code for roughly 5 years now.
-                  I have taken a few community college classes in JavaScript, C#, Java 
-                  and have put in some effort into learning Ruby and Ruby on Rails in 
-                  my spare time. The main reason I'm switching careers is because I think coding is fun.
-                  I really enjoy writing programs, trying to figure out problems, learning new facts, 
-                  and trying to challenge myself. I decided to take 
-                  my part time hobby and turn it into a career.</p><br/>
+                  <p>Hello I'm Marshall. I'm a full stack web developer. My strengths include
+                  JavaScript, React, Node, HTML, and CSS. I also really Love Python. I enjoy tickering
+                  around with new technologies and teaching myself new stacks.</p><br/>
                   <ResumeDiv>
                     <a href={resume} download><Resume>Download Resume</Resume></a>
                   </ResumeDiv>
                 </div>
                 <img src={me} alt='Marshall Lanners Software Engineer' className='me' />
               </StoryDiv>
-              <StyledH2>Technical Training</StyledH2>
-              <SkillsP>I joined<a href="https://lambdaschool.com/"> Lambda School</a>, a full time 8 month programming bootcamp, for their full stack web development program. While the main bulk of my studies involved around <Green>React</Green> and <Green>Node</Green> other technologies covered in the program include:</SkillsP>
-              <Skills>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>LESS</li>
-                  <li>SQL</li>
-                  <li>Javascript</li>
-                </ul>
-                <ul>
-                  <li>Git</li>
-                  <li>Responsive Design</li>
-                  <li>Python</li>
-                  <li>Django</li>
-                  <li>C</li>
-                </ul>
-                <p>HTML, CSS, LESS, SQL, Javascript, Git, Responsive Design, Python, Django, C</p>
-              </Skills>
+              <ColorDiv>
+                <StyledH2>Technical Training</StyledH2>
+                <FlexDiv>
+                  <SkillsP>I joined Lambda School, a full time 8 month programming bootcamp, for their full stack web development program. A full syllabus of the program can be viewed <a href="https://lambdaschool.com/courses/cs/web/">here</a>.</SkillsP>
+                  <CodePicDiv>
+                    <img src={react} alt="react" className='code-pic' />
+                    <img src={node} alt="node" className='code-pic' />
+                    <img src={html} alt="html" className='code-pic' />
+                    <img src={css} alt="css" className='code-pic' />
+                    <img src={python} alt="python" className='code-pic' />
+                  </CodePicDiv>
+                </FlexDiv>
+              </ColorDiv>
               <StyledH2Ed>Education</StyledH2Ed>
               <EducationDiv>
                 <div>
-                  <p>I have a bachelors of Science in Business Administration and with a concentration in managing technology and people. 
-                  I graduated from the Orfalea College of business at California Polytechnic State University in San Luis Obispo California.</p> 
-                  <br /><p>I studied business because I found it really interesting to have a better understanding of how the world works. 
-                  The schools Moto was “learning by doing” and would put a huge emphasis on team projects. </p><br />
+                  <p>I have a bachelors of Science in Business Administration from the Orfalea College of Business at California Polytechnic State University in San Luis Obispo California.<br /><br /></p>
+                  <p>I studied a broad range of topics from accounting and marketings to human resources. My concentration was in management with a emphasis on managing technology and people.</p>
+                  <br /><p> </p><br />
                 </div>
                 <img src={college} alt="cal poly" className="college" /> 
               </EducationDiv>
+              <StyledH2>Contact Me</StyledH2>
+              <SeparateContact>
+                  <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
+                <Contact>
+                  <p>Contact</p>
+                  <p>Seattle, Wa</p>
+                  <p>lanners.marshall@gmail.com</p>
+                  <p>206-475-7021</p>
+                </Contact>
+              </SeparateContact>
+              <LinksDiv>
+                <a href="https://github.com/lanners-marshall/"><img src={github} alt='github' className='github' /></a>
+                <a href="https://www.linkedin.com/in/mlanners/"><img src={linkin} alt='linkin' className='linkin' /></a>
+              </LinksDiv>
             </TabPanel>
             <TabPanel>
               <StyledH2>My Projects</StyledH2>
@@ -151,22 +158,6 @@ class App extends Component {
                   </ContentP><br />
                 </div>
               </SeparateDiv>
-            </TabPanel>
-            <TabPanel>
-              <StyledH2>Contact Me</StyledH2>
-              <SeparateContact>
-                  <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
-                <Contact>
-                  <p>Contact</p>
-                  <p>Seattle, Wa</p>
-                  <p>lanners.marshall@gmail.com</p>
-                  <p>206-475-7021</p>
-                </Contact>
-              </SeparateContact>
-              <LinksDiv>
-                <a href="https://github.com/lanners-marshall/"><img src={github} alt='github' className='github' /></a>
-                <a href="https://www.linkedin.com/in/mlanners/"><img src={linkin} alt='linkin' className='linkin' /></a>
-              </LinksDiv>
             </TabPanel>
             <TabPanel>
             <StyledH2>My Interests</StyledH2>

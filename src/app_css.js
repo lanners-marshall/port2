@@ -23,7 +23,9 @@ export const scrollingTextMobile = keyframes`
 
 export const ResumeDiv = styled.div`
 	display:flex;
-	justify-content: center;
+	@media (max-width: 1180px){
+		justify-content: center;
+	}
 `
 
 export const Resume = styled.p`
@@ -84,13 +86,17 @@ export const Footing = styled.div`
 
 export const StyledH2 = styled.h2`
 	font-family: 'Roboto', sans-serif;
-	margin: 60px 0;
-	margin-top: 90px;
+	margin: 90px 0;
+
 	text-align: center;
 	font-size: 4rem;
 	@media (max-width: 600px){
-		margin: 60px;
+		margin-top: 0px;
 	}
+`
+
+export const StyledH2T = styled(StyledH2)`
+	maring-top: 90px;
 `
 
 export const StyledH2Ed = styled(StyledH2)`
@@ -116,6 +122,7 @@ export const DanceDiv = styled(StoryDiv)`
 `
 
 export const EducationDiv = styled(StoryDiv)`
+
 `
 
 export const DndDiv = styled(StoryDiv)`
@@ -154,6 +161,10 @@ export const SkillsP = styled.p`
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 	margin-bottom: 70px;
+	padding-right: 5%;
+	@media only screen and (max-width: 500px){
+		margin-left: 3%;
+	}
 `
 
 
@@ -245,3 +256,48 @@ export const LinksDiv = styled.div`
 		margin-right: 2%;
 	}
 `
+export const FlexDiv = styled.div`
+	margin: 0 auto;
+	max-width: 900px;
+	display:flex;
+	justify-content: space-around;
+	@media only screen and (max-width: 1180px){
+		flex-direction: column;
+	}
+`
+
+export const CodePicDiv = styled.div`
+	display: flex;
+	@media only screen and (max-width: 1180px){
+		justify-content: center;
+	}
+	@media only screen and (max-width: 500px){
+		padding-bottom: 30px;
+	}
+`
+
+export const ColorDiv = styled.div`
+	background-color: #e8e8e8;
+	padding: 50px 0;
+	width: 93%;
+	margin: 0 auto;
+	border-radius: 6px;
+	@media only screen and (max-width: 1180px){
+		margin-top: 60px;
+	}
+	@media only screen and (max-width: 500px){
+		padding-top: 60px;
+		margin-bottom: 60px;
+	}
+`
+
+export const Intro = styled(StyledH2)`
+	@media only screen and (max-width: 500px){
+		margin-top: 60px;
+		margin-bottom: 50px;
+	}
+`
+// StyledH2
+// SkillsP
+// StyledH2
+// EducationDiv

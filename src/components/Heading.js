@@ -8,7 +8,7 @@ const Heading = () => {
 	return (
 		<Container>
 			<h1>Marshall Lanners<br/></h1>
-			<p>Web Developer</p>
+			<p>Software Engineer</p>
 			<hr />
 		<ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
 			<img src={lambda} alt='lambda school' className="lambda" />
