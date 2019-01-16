@@ -51,7 +51,6 @@ export const Background = styled.div`
 export const Container = styled.div`
 	margin: 15px auto;
 	background-color: white;
-	padding-bottom:60px;
 	width: 95%;
 	border-radius: 9px;
 `
@@ -80,7 +79,7 @@ export const TextBanner = styled.h2`
 	}
 `
 export const Footing = styled.div`
-	height: 100px;
+	height: 50px;
 `
 
 export const StyledH2 = styled.h2`
@@ -88,10 +87,15 @@ export const StyledH2 = styled.h2`
 	margin: 90px 0;
 	text-align: center;
 	font-size: 4rem;
-	padding-top: 30px;
+	margin-top: 70px;
 	@media (max-width: 600px){
-		margin-top: 0px;
+		
 	}
+`
+
+export const StyledC = styled(StyledH2)`
+	margin-top: 0;
+	padding-top: 40px;
 `
 export const StyledH2M = styled(StyledH2)`
 	margin: 0;
@@ -114,7 +118,7 @@ export const StoryDiv = styled.div`
 	width: 93%;
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	line-height: 1.5;
 	@media (max-width: 500px){
 		flex-direction: column-reverse;
@@ -122,6 +126,9 @@ export const StoryDiv = styled.div`
 `
 
 export const DanceDiv = styled(StoryDiv)`
+	> div > p {
+		padding-top: 50px;
+	}
 	@media (max-width: 500px){
 		flex-direction: column;
 	}
@@ -142,7 +149,7 @@ export const DndDiv = styled(StoryDiv)`
 `
 
 export const SkillsP = styled.p`
-	font-size: 2rem;
+	font-size: 2.5rem;
 	line-height: 1.5;
 	width: 93%;
 	margin: 0 auto;
@@ -273,5 +280,23 @@ export const StyleDiv = styled.div`
 
 export const MeColor = styled.div`
 	background-image: linear-gradient(45deg,#c1daff,#f4fafb);
-	padding-bottom: 90px;
+	padding-bottom: 70px;
+`
+
+export const ContactDiv = styled.div`
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+`
+export const Padding = styled.div`
+	padding-bottom: 40px;
+`
+
+export const ColorDiv = styled.div`
+	background-image: linear-gradient(45deg,#c1daff,#f4fafb);
+	padding: 60px 0;
+	> h2 {
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		font-size: 4rem;
+	}
 `

@@ -1,5 +1,5 @@
-.form {
-	
+.form > textarea{
+	margin-bottom: 20px;
 }
 
 .tab-list {

@@ -1,4 +1,10 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+export const Glow = keyframes`
+	to {
+	    text-shadow: 0px 0px 50px blue;
+	}
+`
 
 export const Container = styled.div`
 	color: white;
@@ -12,12 +18,14 @@ export const Container = styled.div`
 	> h1 {
 		font-size: 8rem;
 		white-space: nowrap;
+		animation: ${Glow} 2s infinite alternate;
 		@media (max-width: 670px){
 			font-size: 3rem;
 		}
 	}
 	> p {
 		font-size: 5rem;
+		animation: ${Glow} 2s infinite alternate;
 		@media (max-width: 670px){
 			font-size: 3rem;
 		}

@@ -13,7 +13,7 @@ import python from './components/images/python.png';
 import './images.css'
 import './vidoes.css'
 import ReactContactForm from 'react-mail-form';
-import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, SkillsP, ProjectHr, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, FlexDiv, CodePic, StyleDiv, MeColor, StyledH2M } from './app_css.js';
+import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, SkillsP, ProjectHr, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, FlexDiv, CodePic, StyleDiv, MeColor, StyledH2M, ContactDiv, StyledC, Padding, ColorDiv } from './app_css.js';
 import github from './components/images/github.png';
 import linkin from './components/images/link.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -81,7 +81,6 @@ class App extends Component {
                 <StyledH2>Technical Training</StyledH2>
                 <FlexDiv>
                   <SkillsP>I joined Lambda School, a full time 8 month programming bootcamp, for their full stack web development program. A full syllabus can be viewed <a href="https://lambdaschool.com/courses/cs/web/">here</a>.</SkillsP>
-                  
                     <CodePic>
                       <ScrollAnimation animateIn='fadeInDown' animateOut="fadeOut" className="margin">
                         <img src={react} alt="react" className='code-pic' />
@@ -99,7 +98,6 @@ class App extends Component {
                         <img src={python} alt="python" className='code-pic' />
                       </ScrollAnimation>
                     </CodePic>
-                  
                 </FlexDiv>
               <StyleDiv>
                 <StyledH2M>Education</StyledH2M>
@@ -112,23 +110,28 @@ class App extends Component {
                   <img src={college} alt="cal poly" className="college" /> 
                 </EducationDiv>
                 </StyleDiv>
-              <StyledH2>Contact Me</StyledH2>
-              <SeparateContact>
-                  <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
-                <Contact>
-                  <p>Contact</p>
-                  <p>Seattle, Wa</p>
-                  <p>lanners.marshall@gmail.com</p>
-                  <p>206-475-7021</p>
-                </Contact>
-              </SeparateContact>
-              <LinksDiv>
-                <a href="https://github.com/lanners-marshall/"><img src={github} alt='github' className='github' /></a>
-                <a href="https://www.linkedin.com/in/mlanners/"><img src={linkin} alt='linkin' className='linkin' /></a>
-              </LinksDiv>
+              <ContactDiv>
+                <StyledC>Contact Me</StyledC>
+                <SeparateContact>
+                    <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
+                  <Contact>
+                    <p>Contact</p>
+                    <p>Seattle, Wa</p>
+                    <p>lanners.marshall@gmail.com</p>
+                    <p>206-475-7021</p>
+                  </Contact>
+                </SeparateContact>
+                <LinksDiv>
+                  <a href="https://github.com/lanners-marshall/"><img src={github} alt='github' className='github' /></a>
+                  <a href="https://www.linkedin.com/in/mlanners/"><img src={linkin} alt='linkin' className='linkin' /></a>
+                </LinksDiv>
+              </ContactDiv>
             </TabPanel>
             <TabPanel>
-              <StyledH2>My Projects</StyledH2>
+              <ProjectHr/>
+              <ColorDiv>
+                <h2>My Projects</h2>
+              </ColorDiv>
               <ProjectHr/>
               <SeparateDiv>
                 <div>
@@ -165,17 +168,21 @@ class App extends Component {
                   </ContentP>
                 </div>
                 <Separator/>
-                <div>
+                <Padding>
                   <ProjectH2>Notes</ProjectH2>
                   <iframe title="notes" className='video' src="https://www.youtube.com/embed/65LNd5rFCaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <ContentP>I made a note taking application with full crud functionality in React and Node. I also added a few extra additional features.
                     <br />Github links: <a href="https://github.com/lanners-marshall/Back_End_Project_Week">full application</a>
                   </ContentP><br />
-                </div>
+                </Padding>
               </SeparateDiv>
             </TabPanel>
             <TabPanel>
-            <StyledH2>My Interests</StyledH2>
+              <ProjectHr/>
+                <ColorDiv>
+                  <h2>My Interests</h2>
+                </ColorDiv>
+              <ProjectHr/>
               <DanceDiv>
                 <img src={dance} alt='Marshall Lanners dancing' className='dance' />
                 <div>
@@ -208,7 +215,3 @@ class App extends Component {
 export default App;
 
 
-//skills
-//Green
-//StyledH2Ed
-//CodePicDIv
