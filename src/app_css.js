@@ -127,7 +127,7 @@ export const StoryDiv = styled.div`
 
 export const DanceDiv = styled(StoryDiv)`
 	> div > p {
-		padding-top: 30px;
+		padding-top: 40px;
 		@media (max-width: 500px){
 			padding: 0;
 		}
@@ -143,7 +143,7 @@ export const EducationDiv = styled(StoryDiv)`
 `
 
 export const DndDiv = styled(StoryDiv)`
-	margin-bottom: 15px;
+	padding-bottom: 30px;
 	@media only screen and (max-width: 1180px){
 		padding-bottom: 15px;
 	}
@@ -306,3 +306,4 @@ export const ColorDiv = styled.div`
 `
 
 //DanceDiv
+//DndDiv
