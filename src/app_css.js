@@ -127,10 +127,14 @@ export const StoryDiv = styled.div`
 
 export const DanceDiv = styled(StoryDiv)`
 	> div > p {
-		padding-top: 50px;
+		padding-top: 30px;
+		@media (max-width: 500px){
+			padding: 0;
+		}
 	}
 	@media (max-width: 500px){
 		flex-direction: column;
+		padding: 0;
 	}
 `
 
@@ -300,3 +304,5 @@ export const ColorDiv = styled.div`
 		font-size: 4rem;
 	}
 `
+
+//DanceDiv

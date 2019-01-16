@@ -113,7 +113,7 @@ class App extends Component {
               <ContactDiv>
                 <StyledC>Contact Me</StyledC>
                 <SeparateContact>
-                    <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
+                  <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
                   <Contact>
                     <p>Contact</p>
                     <p>Seattle, Wa</p>
