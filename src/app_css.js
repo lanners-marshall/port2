@@ -2,9 +2,6 @@ import styled, { keyframes } from 'styled-components';
 import colorCode from './components/images/codebg.jpg';
 import noColorCode from './components/images/codebg2.jpg';
 
-
-// project
-
 export const scrollingText = keyframes`
 	0% {
 		transform: translateX(110%)
@@ -53,19 +50,19 @@ export const Background = styled.div`
 `
 export const Container = styled.div`
 	margin: 15px auto;
-	width: 90%;
-	max-width: 1280px;
 	background-color: white;
 	padding-bottom:60px;
+	width: 95%;
+	border-radius: 9px;
 `
 
 export const CodeDiv = styled.div`
 	overflow: hidden;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
 	background-image: url(${colorCode});
 	transition: all 1s;
-	max-width: 93%;
 	margin: 0 auto;
-	border-top: 25px solid white;
 	&:hover {
 		background-image: url(${noColorCode});
 		color: black;
@@ -89,13 +86,18 @@ export const Footing = styled.div`
 export const StyledH2 = styled.h2`
 	font-family: 'Roboto', sans-serif;
 	margin: 90px 0;
-
 	text-align: center;
 	font-size: 4rem;
+	padding-top: 30px;
 	@media (max-width: 600px){
 		margin-top: 0px;
 	}
 `
+export const StyledH2M = styled(StyledH2)`
+	margin: 0;
+	padding: 50px 0;
+`
+
 export const StyledSpace = styled(StyledH2)`
 	@media (max-width: 600px){
 		margin-top: 40px;
@@ -105,10 +107,6 @@ export const StyledSpace = styled(StyledH2)`
 
 export const StyledH2T = styled(StyledH2)`
 	maring-top: 90px;
-`
-
-export const StyledH2Ed = styled(StyledH2)`
-	margin-top: 50px;
 `
 
 export const StoryDiv = styled.div`
@@ -143,25 +141,6 @@ export const DndDiv = styled(StoryDiv)`
 	}
 `
 
-export const Skills = styled.div`
-  display: flex;
-  font-size: 2rem;
-  font-family: 'Lato', sans-serif;
-  justify-content: space-around;
-  line-height: 1.5;
-  > p {
-  	display: none;
-  	@media (max-width: 700px){
-  		display: block;
-  		text-align: center;
-  	}
-  }
-   > ul {
-		@media (max-width: 700px){
-				display: none;
-		}
-  }
-`
 export const SkillsP = styled.p`
 	font-size: 2rem;
 	line-height: 1.5;
@@ -171,7 +150,7 @@ export const SkillsP = styled.p`
 	margin-bottom: 70px;
 	padding-right: 5%;
 	@media only screen and (max-width: 500px){
-		margin-left: 3%;
+		margin-left: 4%;
 	}
 `
 
@@ -204,11 +183,6 @@ export const ContentP = styled.p`
 	font-family: 'Lato', sans-serif;
 	width: 100%;
 	margin: 0 auto;
-`
-
-export const Green = styled.span`
-	color: green;
-	font-weight: bold;
 `
 
 export const Separator = styled(ProjectHr)`
@@ -268,35 +242,11 @@ export const LinksDiv = styled.div`
 export const FlexDiv = styled.div`
 	margin: 0 auto;
 	max-width: 900px;
+	padding-bottom: 50px;
 	display:flex;
 	justify-content: space-around;
 	@media only screen and (max-width: 1180px){
 		flex-direction: column;
-	}
-`
-
-export const CodePicDiv = styled.div`
-	display: flex;
-	@media only screen and (max-width: 1180px){
-		justify-content: center;
-	}
-	@media only screen and (max-width: 500px){
-		padding-bottom: 30px;
-	}
-`
-
-export const ColorDiv = styled.div`
-	background-color: #e8e8e8;
-	padding: 50px 0;
-	width: 93%;
-	margin: 0 auto;
-	border-radius: 6px;
-	@media only screen and (max-width: 1180px){
-		margin-top: 60px;
-	}
-	@media only screen and (max-width: 500px){
-		padding-top: 60px;
-		margin-bottom: 60px;
 	}
 `
 
@@ -306,7 +256,22 @@ export const Intro = styled(StyledH2)`
 		margin-bottom: 50px;
 	}
 `
-// StyledH2
-// SkillsP
-// StyledH2
-// EducationDiv
+
+export const CodePic = styled.div`
+	display: flex;
+	justify-content: center;
+
+`
+
+export const StyleDiv = styled.div`
+	background-image: linear-gradient(45deg,#ffffff,#e4e2e2);
+	padding-bottom: 70px;
+	@media only screen and (max-width: 500px){
+		padding-bottom: 30px;
+	}
+`
+
+export const MeColor = styled.div`
+	background-image: linear-gradient(45deg,#c1daff,#f4fafb);
+	padding-bottom: 90px;
+`

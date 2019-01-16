@@ -13,18 +13,19 @@ import python from './components/images/python.png';
 import './images.css'
 import './vidoes.css'
 import ReactContactForm from 'react-mail-form';
-import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, Skills, SkillsP, ProjectHr, Green, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, StyledH2Ed, FlexDiv, CodePicDiv, ColorDiv, Intro, StyledSpace } from './app_css.js';
+import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, SkillsP, ProjectHr, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, FlexDiv, CodePic, StyleDiv, MeColor, StyledH2M } from './app_css.js';
 import github from './components/images/github.png';
 import linkin from './components/images/link.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './components/styles/custom.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class App extends Component {
 
   constructor(){
     super();
     this.state = {
-      active: [true, false, false, false]
+      active: [true, false, false]
     };
   }
 
@@ -57,46 +58,60 @@ class App extends Component {
           </TextBanner>
           </CodeDiv>
            <Tabs>
-            <TabList className="tab-list">
-              <Tab onClick={() => {this.makeActive(0)}} className={this.state.active[0] ? 'selected': "sub-tab"}>Home</Tab>
-              <Tab onClick={() => {this.makeActive(1)}} className={this.state.active[1] ? 'selected': "sub-tab"}>Projects</Tab>
-              <Tab onClick={() => {this.makeActive(3)}} className={this.state.active[3] ? 'selected': "sub-tab"}>About</Tab>
-            </TabList>
+              <TabList className="tab-list">
+                <Tab onClick={() => {this.makeActive(0)}} className={this.state.active[0] ? 'selected': "sub-tab"}>Home</Tab>
+                <Tab onClick={() => {this.makeActive(1)}} className={this.state.active[1] ? 'selected': "sub-tab"}>Projects</Tab>
+                <Tab onClick={() => {this.makeActive(2)}} className={this.state.active[2] ? 'selected': "sub-tab"}>About</Tab>
+              </TabList>
             <TabPanel>
-              <Intro>Introduction</Intro>
-              <StoryDiv>
-                <div>
-                  <p>Hello I'm Marshall. I'm a full stack web developer. My strengths include
-                  JavaScript, React, Node, HTML, and CSS. I also really Love Python. I enjoy tickering
-                  around with new technologies and teaching myself new stacks.</p><br/>
-                  <ResumeDiv>
-                    <a href={resume} download><Resume>Download Resume</Resume></a>
-                  </ResumeDiv>
-                </div>
-                <img src={me} alt='Marshall Lanners Software Engineer' className='me' />
-              </StoryDiv>
-              <ColorDiv>
+              <MeColor>
+                <StyledH2M>Introduction</StyledH2M>
+                <StoryDiv>
+                  <div>
+                    <p>Hello I'm Marshall. I'm a full stack web developer. My strengths include
+                    JavaScript, React, Node, HTML, and CSS. I also really Love Python. I enjoy tickering
+                    around with new technologies and teaching myself new stacks.</p><br/>
+                    <ResumeDiv>
+                      <a href={resume} download><Resume>Download Resume</Resume></a>
+                    </ResumeDiv>
+                  </div>
+                  <img src={me} alt='Marshall Lanners Software Engineer' className='me' />
+                </StoryDiv>
+              </MeColor>
                 <StyledH2>Technical Training</StyledH2>
                 <FlexDiv>
-                  <SkillsP>I joined Lambda School, a full time 8 month programming bootcamp, for their full stack web development program. A full syllabus of the program can be viewed <a href="https://lambdaschool.com/courses/cs/web/">here</a>.</SkillsP>
-                  <CodePicDiv>
-                    <img src={react} alt="react" className='code-pic' />
-                    <img src={node} alt="node" className='code-pic' />
-                    <img src={html} alt="html" className='code-pic' />
-                    <img src={css} alt="css" className='code-pic' />
-                    <img src={python} alt="python" className='code-pic' />
-                  </CodePicDiv>
+                  <SkillsP>I joined Lambda School, a full time 8 month programming bootcamp, for their full stack web development program. A full syllabus can be viewed <a href="https://lambdaschool.com/courses/cs/web/">here</a>.</SkillsP>
+                  
+                    <CodePic>
+                      <ScrollAnimation animateIn='fadeInDown' animateOut="fadeOut" className="margin">
+                        <img src={react} alt="react" className='code-pic' />
+                      </ScrollAnimation>
+                      <ScrollAnimation animateIn='pulse' animateOut="fadeOut" className="margin">
+                        <img src={node} alt="node" className='code-pic' />
+                      </ScrollAnimation>
+                      <ScrollAnimation animateIn='pulse' animateOut="fadeOut" className="margin">
+                        <img src={html} alt="html" className='code-pic' />
+                      </ScrollAnimation>
+                      <ScrollAnimation animateIn='bounceIn' animateOut="fadeOut" className="margin">
+                        <img src={css} alt="css" className='code-pic' />
+                      </ScrollAnimation>
+                      <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut" className="margin">
+                        <img src={python} alt="python" className='code-pic' />
+                      </ScrollAnimation>
+                    </CodePic>
+                  
                 </FlexDiv>
-              </ColorDiv>
-              <StyledH2Ed>Education</StyledH2Ed>
-              <EducationDiv>
-                <div>
-                  <p>I have a bachelors of Science in Business Administration from the Orfalea College of Business at California Polytechnic State University in San Luis Obispo California.<br /><br /></p>
-                  <p>I studied a broad range of topics from accounting and marketings to human resources. My concentration was in management with a emphasis on managing technology and people.</p>
-                  <br /><p> </p><br />
-                </div>
-                <img src={college} alt="cal poly" className="college" /> 
-              </EducationDiv>
+              <StyleDiv>
+                <StyledH2M>Education</StyledH2M>
+                <EducationDiv>
+                  <div>
+                    <p>I have a bachelors of Science in Business Administration from the Orfalea College of Business at California Polytechnic State University in San Luis Obispo California.<br /><br /></p>
+                    <p>I studied a broad range of topics from accounting and marketings to human resources. My concentration was in management with a emphasis on managing technology and people.</p>
+                    <br /><p> </p><br />
+                  </div>
+                  <img src={college} alt="cal poly" className="college" /> 
+                </EducationDiv>
+                </StyleDiv>
               <StyledH2>Contact Me</StyledH2>
               <SeparateContact>
                   <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
@@ -113,7 +128,7 @@ class App extends Component {
               </LinksDiv>
             </TabPanel>
             <TabPanel>
-              <StyledSpace>My Projects</StyledSpace>
+              <StyledH2>My Projects</StyledH2>
               <ProjectHr/>
               <SeparateDiv>
                 <div>
@@ -160,7 +175,7 @@ class App extends Component {
               </SeparateDiv>
             </TabPanel>
             <TabPanel>
-            <StyledSpace>My Interests</StyledSpace>
+            <StyledH2>My Interests</StyledH2>
               <DanceDiv>
                 <img src={dance} alt='Marshall Lanners dancing' className='dance' />
                 <div>
@@ -191,3 +206,9 @@ class App extends Component {
 }
 
 export default App;
+
+
+//skills
+//Green
+//StyledH2Ed
+//CodePicDIv

@@ -7,6 +7,7 @@ export const Container = styled.div`
 	margin: 0 auto;
 	width: 90%;
 	max-width: 600px;
+	padding-bottom: 40px;
 	text-align: center;
 	> h1 {
 		font-size: 8rem;
