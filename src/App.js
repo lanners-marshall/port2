@@ -13,7 +13,7 @@ import python from './components/images/python.png';
 import './images.css'
 import './vidoes.css'
 import ReactContactForm from 'react-mail-form';
-import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, SkillsP, ProjectHr, SeparateDiv, ProjectH2, ContentP, Separator, Contact, SeparateContact, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, FlexDiv, CodePic, StyleDiv, MeColor, StyledH2M, ContactDiv, StyledC, Padding, ColorDiv } from './app_css.js';
+import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, SkillsP, ProjectHr, SeparateDiv, ProjectH2, ContentP, Separator, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, FlexDiv, CodePic, StyleDiv, MeColor, StyledH2M, ContactDiv, StyledC, Padding, ColorDiv } from './app_css.js';
 import github from './components/images/github.png';
 import linkin from './components/images/link.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -112,15 +112,7 @@ class App extends Component {
                 </StyleDiv>
               <ContactDiv>
                 <StyledC>Contact Me</StyledC>
-                <SeparateContact>
-                  <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
-                  <Contact>
-                    <p>Contact</p>
-                    <p>Seattle, Wa</p>
-                    <p>lanners.marshall@gmail.com</p>
-                    <p>206-475-7021</p>
-                  </Contact>
-                </SeparateContact>
+                <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
                 <LinksDiv>
                   <a href="https://github.com/lanners-marshall/"><img src={github} alt='github' className='github' /></a>
                   <a href="https://www.linkedin.com/in/mlanners/"><img src={linkin} alt='linkin' className='linkin' /></a>
@@ -213,5 +205,3 @@ class App extends Component {
 }
 
 export default App;
-
-

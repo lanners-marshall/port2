@@ -1,4 +1,63 @@
+@keyframes hoverme {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 .form > textarea{
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+
+.form > a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  border: solid grey 1px;
+  background-color: grey;
+  border-radius: 4px;
+  font-size: 2.5rem;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+  text-align: center;
+}
+.form > a:hover, .form > a:focus, .form > a:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.form > input {
+	max-width: 450px;
+	border: solid grey .5px;
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.form {
+	background-color: #f1f1f1;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	border: solid black 1px;
+	border-radius: 2px;
 	margin-bottom: 20px;
 }
 
@@ -21,6 +80,13 @@
 	background-color: white;
 }
 
+.sub-tab > a:hover, .sub-tab > a:focus, .sub-tab > a:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
 .sub-tab:hover {
 	cursor: pointer;
 }
@@ -33,6 +99,30 @@
 	margin-right: 2%;
 	width: 150px;
 	text-align: center;
+}
+
+@media (max-width: 700px){
+	.form {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.form > input {
+		max-width: 500px;
+		width: 93%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.form > textarea{
+		max-width: 500px;
+		width: 92%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 700px){
+	.form > textarea{
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 500px){
