@@ -45,14 +45,13 @@ export const Background = styled.div`
 export const Container = styled.div`
 	margin: 15px auto;
 	background-color: white;
-	width: 95%;
+	width: 92%;
 	border-radius: 9px;
+
 `
 
 export const CodeDiv = styled.div`
 	overflow: hidden;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
 	background-image: url(${colorCode});
 	transition: all 1s;
 	margin: 0 auto;
@@ -89,8 +88,10 @@ export const StyledH2 = styled.h2`
 
 export const StyledC = styled(StyledH2)`
 	margin-top: 0;
-	padding-top: 40px;
-	margin-bottom:20px;
+	padding-top: 80px;
+	font-size: 5rem;
+	color: #b8b5b5;
+	margin-bottom: 0;
 `
 export const StyledH2M = styled(StyledH2)`
 	margin: 0;
@@ -134,7 +135,6 @@ export const DanceDiv = styled(StoryDiv)`
 `
 
 export const EducationDiv = styled(StoryDiv)`
-
 `
 
 export const DndDiv = styled(StoryDiv)`
@@ -180,7 +180,7 @@ export const ProjectH2 = styled.div`
 	font-size: 3rem;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	margin: 40px 0;
+	margin: 60px 0;
 
 `
 
@@ -237,28 +237,25 @@ export const CodePic = styled.div`
 `
 
 export const StyleDiv = styled.div`
-	background-image: linear-gradient(45deg,#ffffff,#e4e2e2);
 	padding-bottom: 70px;
+	border-bottom-left: solid black 1px;
 	@media only screen and (max-width: 500px){
 		padding-bottom: 30px;
 	}
 `
 
 export const MeColor = styled.div`
-	background-image: linear-gradient(45deg,#c1daff,#f4fafb);
 	padding-bottom: 70px;
 `
 
 export const ContactDiv = styled.div`
-	border-bottom-left-radius: 9px;
-	border-bottom-right-radius: 9px;
+	background-color:rgb(33, 41, 49);
 `
 export const Padding = styled.div`
 	padding-bottom: 40px;
 `
 
 export const ColorDiv = styled.div`
-	background-image: linear-gradient(45deg,#c1daff,#f4fafb);
 	padding: 60px 0;
 	> h2 {
 		font-family: 'Roboto', sans-serif;
@@ -266,3 +263,10 @@ export const ColorDiv = styled.div`
 		font-size: 4rem;
 	}
 `
+export const Grey = styled.div`
+	background-image: linear-gradient(45deg,#ffffff,#e4e2e2);
+	padding-top: 30px;
+`
+//ContactDiv
+//StyleDiv
+//ProjectH2

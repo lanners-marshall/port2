@@ -13,7 +13,7 @@ import python from './components/images/python.png';
 import './images.css'
 import './vidoes.css'
 import ReactContactForm from 'react-mail-form';
-import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, SkillsP, ProjectHr, SeparateDiv, ProjectH2, ContentP, Separator, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, FlexDiv, CodePic, StyleDiv, MeColor, StyledH2M, ContactDiv, StyledC, Padding, ColorDiv } from './app_css.js';
+import { Container, Background, Footing, CodeDiv, TextBanner, StyledH2, StoryDiv, SkillsP, ProjectHr, SeparateDiv, ProjectH2, ContentP, Separator, LinksDiv, DanceDiv, DndDiv, EducationDiv, Resume, ResumeDiv, FlexDiv, CodePic, StyleDiv, MeColor, StyledH2M, ContactDiv, StyledC, Padding, ColorDiv, Grey } from './app_css.js';
 import github from './components/images/github.png';
 import linkin from './components/images/link.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -59,9 +59,9 @@ class App extends Component {
           </CodeDiv>
            <Tabs>
               <TabList className="tab-list">
-                <Tab onClick={() => {this.makeActive(0)}} className={this.state.active[0] ? 'selected': "sub-tab"}>Home</Tab>
-                <Tab onClick={() => {this.makeActive(1)}} className={this.state.active[1] ? 'selected': "sub-tab"}>Projects</Tab>
-                <Tab onClick={() => {this.makeActive(2)}} className={this.state.active[2] ? 'selected': "sub-tab"}>About</Tab>
+                <Tab onClick={() => {this.makeActive(0)}} className={this.state.active[0] ? 'selected hvr-grow': "sub-tab hvr-grow"}>Home</Tab>
+                <Tab onClick={() => {this.makeActive(1)}} className={this.state.active[1] ? 'selected hvr-grow': "sub-tab hvr-grow"}>Projects</Tab>
+                <Tab onClick={() => {this.makeActive(2)}} className={this.state.active[2] ? 'selected hvr-grow': "sub-tab hvr-grow"}>About</Tab>
               </TabList>
             <TabPanel>
               <MeColor>
@@ -78,6 +78,7 @@ class App extends Component {
                   <img src={me} alt='Marshall Lanners Software Engineer' className='me' />
                 </StoryDiv>
               </MeColor>
+              <Grey>
                 <StyledH2>Technical Training</StyledH2>
                 <FlexDiv>
                   <SkillsP>I joined Lambda School, a full time 8 month programming bootcamp, for their full stack web development program. A full syllabus can be viewed <a href="https://lambdaschool.com/courses/cs/web/">here</a>.</SkillsP>
@@ -99,17 +100,17 @@ class App extends Component {
                       </ScrollAnimation>
                     </CodePic>
                 </FlexDiv>
+              </Grey>
               <StyleDiv>
                 <StyledH2M>Education</StyledH2M>
                 <EducationDiv>
                   <div>
                     <p>I have a bachelors of Science in Business Administration from the Orfalea College of Business at California Polytechnic State University in San Luis Obispo California.<br /><br /></p>
                     <p>I studied a broad range of topics from accounting and marketings to human resources. My concentration was in management with a emphasis on managing technology and people.</p>
-                    <br /><p> </p><br />
                   </div>
                   <img src={college} alt="cal poly" className="college" /> 
                 </EducationDiv>
-                </StyleDiv>
+              </StyleDiv>
               <ContactDiv>
                 <StyledC>Contact Me</StyledC>
                 <ReactContactForm to="lanners.marshall@gmail.com" className='form'/>
@@ -120,14 +121,8 @@ class App extends Component {
               </ContactDiv>
             </TabPanel>
             <TabPanel>
-              <ProjectHr/>
-              <ColorDiv>
-                <h2>My Projects</h2>
-              </ColorDiv>
-              <ProjectHr/>
               <SeparateDiv>
                 <div>
-                  <ProjectH2>Encounter Generator</ProjectH2>
                   <iframe  className='video' title='dungeon-helper' src="https://www.youtube.com/embed/9FWDO0611Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <ContentP>
                     I lead a team in making this React project during the Winter 2019 Lambda School Hackathon. This is an encounter generator for dungeons and dragons 5th edition, so that dungeon masters can quickly set up encounters for their players.<br />
@@ -139,7 +134,6 @@ class App extends Component {
                 </div>
                 <Separator/>
                 <div>
-                  <ProjectH2>Spotify Application</ProjectH2>
                   <iframe className="video" title="spotify app" src="https://www.youtube.com/embed/lkMOtWU6ptI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <ContentP>
                     I made a React app that interacts with the Spotify api. This app streamlines the process for building playlists with your Spotify account while also allowing you to look up music and play different songs. You are allowed to look up music by artist, album, or song.<br />
@@ -150,7 +144,6 @@ class App extends Component {
               </SeparateDiv>
               <SeparateDiv>
                 <div>
-                  <ProjectH2>Multi User Dungeon</ProjectH2>
                   <iframe className='video' title='Mud' src="https://www.youtube.com/embed/NbS8ljriXh4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <ContentP>I made a text based adventure page in React and Django that allows you 
                   to play and communicate with other people as you play.<br />
@@ -161,7 +154,6 @@ class App extends Component {
                 </div>
                 <Separator/>
                 <Padding>
-                  <ProjectH2>Notes</ProjectH2>
                   <iframe title="notes" className='video' src="https://www.youtube.com/embed/65LNd5rFCaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <ContentP>I made a note taking application with full crud functionality in React and Node. I also added a few extra additional features.
                     <br />Github links: <a href="https://github.com/lanners-marshall/Back_End_Project_Week">full application</a>
@@ -170,11 +162,6 @@ class App extends Component {
               </SeparateDiv>
             </TabPanel>
             <TabPanel>
-              <ProjectHr/>
-                <ColorDiv>
-                  <h2>My Interests</h2>
-                </ColorDiv>
-              <ProjectHr/>
               <DanceDiv>
                 <img src={dance} alt='Marshall Lanners dancing' className='dance' />
                 <div>

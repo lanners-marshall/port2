@@ -12,6 +12,8 @@
 	max-width: 650px;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	border-radius: 4px;
+	padding: 1%;
 }
 
 
@@ -29,10 +31,12 @@
   background-color: grey;
   border-radius: 4px;
   font-size: 2.5rem;
-  width: 50%;
+  width: 250px;
   margin: 0 auto;
+  margin-top: 20px;
   padding: 1%;
   text-align: center;
+  color: #e3e1e1;
 }
 .form > a:hover, .form > a:focus, .form > a:active {
   -webkit-transform: scale(1.1);
@@ -42,21 +46,20 @@
 
 .form > input {
 	max-width: 450px;
-	border: solid grey .5px;
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+	border-radius: 4px;
+	padding: 1%;
 }
 
 .form {
-	background-color: #f1f1f1;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	width: 100%;
 	max-width: 700px;
 	margin: 0 auto;
-	border: solid black 1px;
 	border-radius: 2px;
 	margin-bottom: 20px;
 }
@@ -66,8 +69,7 @@
 	font-size: 2rem;
 	list-style-type: none;
 	justify-content: center;
-	background-image: url(circut.jpg);
-	padding: 70px 0;
+	padding-top: 70px;
 }
 
 .sub-tab {
