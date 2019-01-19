@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Heading = styled.div`
 	margin-top: 50px;
+	@media (max-width: 500px){
+		margin-top: 10px;
+	}
 `
 
 export const Section = styled.div`
@@ -16,7 +19,7 @@ export const Section = styled.div`
 	}
 	> div {
 		@media (max-width: 1130px){
-			width: 98%;
+			width: 97%;
 			max-width: 800px;
 		}
 	}
@@ -29,7 +32,7 @@ export const Section = styled.div`
 		}
 		@media (max-width: 500px){
 			font-size: 1.6rem;
-			margin-bottom: 20px;	
+			margin-bottom: 0;	
 		}
 	}
 	@media (max-width: 1130px){
@@ -50,6 +53,6 @@ export const Separator = styled.div`
 export const Footing = styled.div`
 	padding-bottom: 70px;
 	@media (max-width: 500px){
-		padding: 0;
+		padding-bottom: 20px;
 	}
 `
