@@ -61,8 +61,6 @@ class App extends Component {
             </TabPanel>
           </Tabs>
         </Container>
-        <Footing>
-        </Footing>
       </Background>
     );
   }

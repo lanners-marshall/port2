@@ -110,12 +110,10 @@ export const StyledC = styled(StyledH2)`
 export const LinksDiv = styled.div`
 	display: flex;
 	justify-content: center;
+	padding-bottom: 50px;
 	width: 93%;
-	padding-bottom: 30px;
 	margin-left: 4.5%;
 	> a {
 		margin-right: 2%;
 	}
 `
-
-//ContactDiv

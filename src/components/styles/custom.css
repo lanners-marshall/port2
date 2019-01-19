@@ -1,21 +1,21 @@
 @keyframes hoverme {
-    0% {
-        transform: scale(1.0);
-    }
-    100% {
-        transform: scale(1.1);
-    }
+  0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.1);
+  }
 }
 
 .form > textarea{
-	width: 100%;
 	max-width: 550px;
-	margin: 0 auto;
-	margin-bottom: 20px;
 	border-radius: 4px;
-	padding: 1%;
+	padding: 10px 0;
+	font-size: 2rem;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 20px;
 }
-
 
 .form > a {
   border: solid grey 2px;
@@ -23,7 +23,7 @@
   font-size: 2.5rem;
   width: 250px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 1%;
   text-align: center;
   color: #e3e1e1;
@@ -37,22 +37,24 @@
 
 .form > input {
 	max-width: 450px;
-	width: 100%;
 	max-width: 550px;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	border-radius: 4px;
-	padding: 1%;
+	padding: 10px 0;
+	font-size: 2rem;
 }
 
 .form {
 	padding-top: 40px;
-	padding-bottom: 60px;
-	width: 100%;
+	padding-bottom: 20px;
 	max-width: 700px;
 	margin: 0 auto;
 	border-radius: 2px;
 	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 .tab-list {
@@ -73,17 +75,6 @@
 	background-color: white;
 }
 
-.sub-tab > a:hover, .sub-tab > a:focus, .sub-tab > a:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-
-.sub-tab:hover {
-	cursor: pointer;
-}
-
 .selected {
 	border: solid black 1px;
 	padding: 2%;
@@ -96,20 +87,16 @@
 
 @media (max-width: 700px){
 	.form {
-		width: 93%;
 		margin: 0 auto;
 		margin-bottom: 20px;
 	}
 	.form > input {
 		max-width: 600px;
-		width: 100%;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
 	.form > textarea{
 		max-width: 600px;
-		width: 100%;
-		margin: 0 auto;
 	}
 }
 

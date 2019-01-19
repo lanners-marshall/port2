@@ -51,8 +51,14 @@ export const Separator = styled.div`
 `
 
 export const Footing = styled.div`
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	@media (max-width: 500px){
 		padding-bottom: 20px;
 	}
+`
+
+export const ColorBottom = styled.div`
+	padding-top: 50px;
+	background-color: #212931;
+	border-raidus: 7px;
 `

@@ -1,7 +1,7 @@
 import React from 'react';
 import dance from './images/dancing.jpg'
 import map from './images/map.jpeg'
-import {DndDiv, DanceDiv} from './styles/interests_css.js';
+import {DndDiv, DanceDiv, Footing, ColorBottom} from './styles/interests_css.js';
 
 const Interests = () => {
 	return (
@@ -25,6 +25,8 @@ const Interests = () => {
         </div>
         <img src={map} alt='Marshall Lanners dancing' className='map' />
       </DndDiv>
+      <Footing/>
+      <ColorBottom/>
 		</div>
 	)
 }

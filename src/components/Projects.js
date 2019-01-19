@@ -1,5 +1,5 @@
 import React from 'react';
-import {Section, Separator, Footing, Heading} from './styles/projects_css.js';
+import {Section, Separator, Footing, Heading, ColorBottom} from './styles/projects_css.js';
 import './styles/vidoes.css';
 
 const Projects = () => {
@@ -29,6 +29,7 @@ const Projects = () => {
 				</div>
 			</Section>
 			<Footing/>
+			<ColorBottom/>
 		</div>
 	)
 }

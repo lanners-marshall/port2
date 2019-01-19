@@ -36,7 +36,7 @@ export const Background = styled.div`
 	background-color: #212931;
 `
 export const Container = styled.div`
-	margin: 15px auto;
+	margin: 0 auto;
 	background-color: white;
 	width: 92%;
 	border-radius: 9px;
@@ -63,9 +63,6 @@ export const TextBanner = styled.h2`
 		animation: ${scrollingTextMobile} 40s linear infinite;
 	}
 `
-export const Footing = styled.div`
-	height: 50px;
-`
 
 export const StyledH2 = styled.h2`
 	font-family: 'Roboto', sans-serif;
@@ -74,10 +71,8 @@ export const StyledH2 = styled.h2`
 	font-size: 4rem;
 	margin-top: 70px;
 	@media (max-width: 600px){
-		
 	}
 `
-
 
 export const StyledSpace = styled(StyledH2)`
 	@media (max-width: 600px){
