@@ -103,13 +103,16 @@ export const StyledC = styled(StyledH2)`
 	font-size: 5rem;
 	color: #b8b5b5;
 	margin-bottom: 0;
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
 `
 
 export const LinksDiv = styled.div`
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	width: 93%;
 	padding-bottom: 30px;
+	margin-left: 4.5%;
 	> a {
 		margin-right: 2%;
 	}

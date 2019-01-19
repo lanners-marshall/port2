@@ -22,6 +22,8 @@ export const Container = styled.div`
 		@media (max-width: 670px){
 			font-size: 3rem;
 		}
+		font-family: 'Noto Sans', sans-serif;
+		font-weight: bold;
 	}
 	> p {
 		font-size: 5rem;

@@ -10,9 +10,9 @@ const Heading = () => {
 			<h1>Marshall Lanners<br/></h1>
 			<p>Software Engineer</p>
 			<hr />
-		<ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
-			<img src={lambda} alt='lambda school' className="lambda" />
-		</ScrollAnimation>
+			<ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+				<img src={lambda} alt='lambda school' className="lambda" />
+			</ScrollAnimation>
 		</Container>
 	)
 }
