@@ -10,7 +10,7 @@ const Interests = () => {
         <img src={dance} alt='Marshall Lanners dancing' className='dance' />
         <div>
           <p>In my free time I love to go out dancing. I have been doing partner dancing for over 14 years. 
-          I enjoy all swing dances, salsa, tango, country, ballroom, you name it. I have done countless dance competitions and have a number of awards that I keep on top of my dresser. </p><br/>
+          I enjoy all swing dances, salsa, tango, country, ballroom, you name it. I have done countless dance competitions and have a number of awards that I keep on top of my dresser. </p>
           <p>I really enjoy going out, interacting with others socialy, and being physicaly active. There is nothing like a good night on the town.</p> 
         </div>
       </DanceDiv>
