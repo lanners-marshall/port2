@@ -47,9 +47,9 @@ class App extends Component {
           </CodeDiv>
            <Tabs>
               <TabList className="tab-list">
-                <Tab onClick={() => {this.makeActive(0)}} className={this.state.active[0] ? 'selected hvr-grow': "sub-tab hvr-grow"}>Home</Tab>
-                <Tab onClick={() => {this.makeActive(1)}} className={this.state.active[1] ? 'selected hvr-grow': "sub-tab hvr-grow"}>Projects</Tab>
-                <Tab onClick={() => {this.makeActive(2)}} className={this.state.active[2] ? 'selected hvr-grow': "sub-tab hvr-grow"}>About</Tab>
+                <Tab onClick={() => {this.makeActive(0)}} className={this.state.active[0] ? 'selected hvr-shrink': "sub-tab hvr-shrink"}>Home</Tab>
+                <Tab onClick={() => {this.makeActive(1)}} className={this.state.active[1] ? 'selected hvr-shrink': "sub-tab hvr-shrink"}>Projects</Tab>
+                <Tab onClick={() => {this.makeActive(2)}} className={this.state.active[2] ? 'selected hvr-shrink': "sub-tab hvr-shrink"}>About</Tab>
               </TabList>
             <TabPanel>
               <Home/>

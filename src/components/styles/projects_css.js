@@ -10,13 +10,15 @@ export const Section = styled.div`
 	align-items: center;
 	> div > p > a {
 		color: black;
-		border-radius: 3px;
 		@media (max-width: 1130px){
 			margin-right: 1%;
 		}
 	}
-	> div > p > a:hover {
-		color: #212931;
+	> div {
+		@media (max-width: 1130px){
+			width: 98%;
+			max-width: 800px;
+		}
 	}
 	> div > p {
 		font-size: 2rem;
@@ -27,11 +29,15 @@ export const Section = styled.div`
 		}
 		@media (max-width: 500px){
 			font-size: 1.6rem;
-			margin-bottom: 40px;	
+			margin-bottom: 20px;	
 		}
 	}
 	@media (max-width: 1130px){
 		flex-direction: column;
+	}
+	@media only screen and (max-width: 800px){
+		width: 95%;
+		margin: 0 auto;
 	}
 `
 export const Separator = styled.div`
