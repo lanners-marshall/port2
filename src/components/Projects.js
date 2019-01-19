@@ -9,7 +9,7 @@ const Projects = () => {
 			<Section>
 				<div>
 					<iframe className='video' title='dungeon-helper' src="https://www.youtube.com/embed/9FWDO0611Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<p>DnD Encounter Generator. <br/><a href="https://dungeon-helper.com/" className="hvr-grow">Website</a>  <a href="https://github.com/lanners-marshall/dnd-encounter-generator" className="hvr-grow">Github</a></p>
+					<p>Encounter Generator. <br/><a href="https://dungeon-helper.com/" className="hvr-grow">Website</a>  <a href="https://github.com/lanners-marshall/dnd-encounter-generator" className="hvr-grow">Github</a></p>
 				</div>
 				<Separator/>
 				<div>
