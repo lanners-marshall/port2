@@ -46,7 +46,7 @@
 }
 
 .form {
-	padding-top: 60px;
+	padding-top: 40px;
 	padding-bottom: 60px;
 	width: 100%;
 	max-width: 700px;
@@ -96,19 +96,19 @@
 
 @media (max-width: 700px){
 	.form {
-		width: 90%;
+		width: 93%;
 		margin: 0 auto;
 		margin-bottom: 20px;
 	}
 	.form > input {
-		max-width: 500px;
-		width: 93%;
+		max-width: 600px;
+		width: 100%;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
 	.form > textarea{
-		max-width: 500px;
-		width: 92%;
+		max-width: 600px;
+		width: 100%;
 		margin: 0 auto;
 	}
 }
