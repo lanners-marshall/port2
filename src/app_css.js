@@ -20,13 +20,6 @@ export const scrollingTextMobile = keyframes`
 	}
 `
 
-export const ResumeDiv = styled.div`
-	display:flex;
-	@media (max-width: 1180px){
-		justify-content: center;
-	}
-`
-
 export const Resume = styled.p`
 	line-height: 1.5;
   color: white;
@@ -47,7 +40,6 @@ export const Container = styled.div`
 	background-color: white;
 	width: 92%;
 	border-radius: 9px;
-
 `
 
 export const CodeDiv = styled.div`
@@ -86,17 +78,6 @@ export const StyledH2 = styled.h2`
 	}
 `
 
-export const StyledC = styled(StyledH2)`
-	margin-top: 0;
-	padding-top: 80px;
-	font-size: 5rem;
-	color: #b8b5b5;
-	margin-bottom: 0;
-`
-export const StyledH2M = styled(StyledH2)`
-	margin: 0;
-	padding: 50px 0;
-`
 
 export const StyledSpace = styled(StyledH2)`
 	@media (max-width: 600px){
@@ -109,98 +90,11 @@ export const StyledH2T = styled(StyledH2)`
 	maring-top: 90px;
 `
 
-export const StoryDiv = styled.div`
-	display:flex;
-	width: 93%;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	font-size: 2.5rem;
-	line-height: 1.5;
-	@media (max-width: 500px){
-		flex-direction: column-reverse;
-	}
-`
-
-export const DanceDiv = styled(StoryDiv)`
-	> div > p {
-		padding-top: 40px;
-		@media (max-width: 500px){
-			padding: 0;
-		}
-	}
-	@media (max-width: 500px){
-		flex-direction: column;
-		padding: 0;
-	}
-`
-
-export const EducationDiv = styled(StoryDiv)`
-`
-
-export const DndDiv = styled(StoryDiv)`
-	padding-bottom: 30px;
-	@media only screen and (max-width: 1180px){
-		padding-bottom: 15px;
-	}
-	@media (max-width: 500px){
-		padding-bottom: 30px;
-	}
-`
-
-export const SkillsP = styled.p`
-	font-size: 2.5rem;
-	line-height: 1.5;
-	width: 93%;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	margin-bottom: 70px;
-	padding-right: 5%;
-	@media only screen and (max-width: 500px){
-		margin-left: 4%;
-	}
-`
-
-
-export const ProjectHr = styled.hr`
-	margin: 0;
-`
-
-export const SeparateDiv = styled.div`
-	display: flex;
-	width: 93%;
-	margin: 0 auto;
-	@media (max-width: 700px){
-		flex-direction: column;
-	}
-	> div {
-		width: 100%;
-	}
-`
 export const ProjectH2 = styled.div`
 	font-size: 3rem;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	margin: 60px 0;
-
-`
-
-export const ContentP = styled.p`
-	font-size: 2rem;
-	font-family: 'Lato', sans-serif;
-	width: 100%;
-	margin: 0 auto;
-`
-
-export const Separator = styled(ProjectHr)`
-	display: block;
-  border: 0;
-  border-top: 1px solid white;
-	height: 530px;
-	margin: 0 2%;
-	border-color: white;
-	@media (max-width: 700px){
-		display: none;
-	}
 `
 
 export const LinksDiv = styled.div`
@@ -212,47 +106,12 @@ export const LinksDiv = styled.div`
 		margin-right: 2%;
 	}
 `
-export const FlexDiv = styled.div`
-	margin: 0 auto;
-	max-width: 900px;
-	padding-bottom: 50px;
-	display:flex;
-	justify-content: space-around;
-	@media only screen and (max-width: 1180px){
-		flex-direction: column;
-	}
-`
 
 export const Intro = styled(StyledH2)`
 	@media only screen and (max-width: 500px){
 		margin-top: 60px;
 		margin-bottom: 50px;
 	}
-`
-
-export const CodePic = styled.div`
-	display: flex;
-	justify-content: center;
-
-`
-
-export const StyleDiv = styled.div`
-	padding-bottom: 70px;
-	border-bottom-left: solid black 1px;
-	@media only screen and (max-width: 500px){
-		padding-bottom: 30px;
-	}
-`
-
-export const MeColor = styled.div`
-	padding-bottom: 70px;
-`
-
-export const ContactDiv = styled.div`
-	background-color:rgb(33, 41, 49);
-`
-export const Padding = styled.div`
-	padding-bottom: 40px;
 `
 
 export const ColorDiv = styled.div`
@@ -263,10 +122,3 @@ export const ColorDiv = styled.div`
 		font-size: 4rem;
 	}
 `
-export const Grey = styled.div`
-	background-image: linear-gradient(45deg,#ffffff,#e4e2e2);
-	padding-top: 30px;
-`
-//ContactDiv
-//StyleDiv
-//ProjectH2
